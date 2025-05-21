@@ -147,7 +147,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div style="border: 5px solid #003083; border-radius: 30px; padding: 10px; display: inline-block;">
-        <video id="teaser" autoplay muted loop playsinline height="100%">
+        <video id="teaser" autoplay muted loop playsinline>
           <source src="./static/videos/anybody.mp4"
           type="video/mp4">
         </video>
@@ -174,7 +174,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-vcentered">
       <!-- Video Section -->
-      <div class="column is-half">
+      <div class="column is-7">
         <div style="border: 5px solid #003083; border-radius: 30px; padding: 10px;">
           <video id="half-split-video" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/baseline_setup.mp4" type="video/mp4">
@@ -182,7 +182,7 @@
         </div>
       </div>
       <!-- Text Section -->
-      <div class="column is-half">
+      <div class="column is-4">
         <div class="content">
           <h3 class="title">Morphology-aware Baselines</h3>
           <p>
@@ -198,50 +198,28 @@
 <section class="section" id="ExperimentalResults">
   <div class="container is-max-desktop">
     <h3 class="title has-text-centered">Experimental Results</h3>
-    <div class="columns is-vcentered">
-      <div class="column is-4">
-        <h3>Can ME training outperform the SE baseline on train morphs?</h3>
-      </div>
-      <div class="column is-9"></div>
-        <figure class="image is-16by9">
-          <img src="./static/images/mt_results.png" alt="Multi-task Scores">
-        </figure>
-        <p class="has-text-centered">Figure 1: Multi-task scores for different benchmark tasks.</p>
+    
+    <div class="content">
+      <h4 class="title">Can ME training outperform the SE baseline on train morphs?</h4>
+      <div style="border: 5px solid #a3b3ce; border-radius: 30px; padding: 10px;">
+        <img src="./static/images/mt_results.png" alt="Multi-task Scores">
       </div>
     </div>
-    <div class="columns is-vcentered">
-      <div class="column is-3">
-        <h4>How well does the model extrapolate to different link structures?</h4>
-      </div>
-      <div class="column is-9">
-        <figure class="image is-16by9">
-          <img src="./static/images/extrapolation_results.png" alt="Extrapolation Results">
-        </figure>
-        <p class="has-text-centered">Figure 2: Extrapolation Results</p>
+    
+    <div class="content">
+      <h4 class="title">Can ME training zero-shot surpass SE on test morph?</h4>
+      <div style="border: 5px solid #a3b3ce; border-radius: 30px; padding: 10px;">
+        <img src="./static/images/zs_scores.png" alt="Zero-shot Scores">
       </div>
     </div>
-    <div class="columns is-vcentered">
-      <div class="column is-3"></div>
-        <h4>How does the model perform on combinations of link structures?</h4>
-      </div>
-      <div class="column is-9">
-        <figure class="image is-16by9">
-          <img src="./static/images/composition_results.png" alt="Composition Results">
-        </figure>
-        <p class="has-text-centered">Figure 3: Composition Results</p>
+    
+    <div class="content">
+      <h4 class="title">Can fine-tuning help in complex scenarios?</h4>
+      <div style="border: 5px solid #a3b3ce; border-radius: 30px; padding: 10px;">
+        <img src="./static/images/ft_results.png" alt="Fine-tuning Scores">
       </div>
     </div>
-    <div class="columns is-vcentered">
-      <div class="column is-3">
-        <h4>What is the overall performance across all tasks?</h4>
-      </div>
-      <div class="column is-9">
-        <figure class="image is-16by9">
-          <img src="./static/images/overall_performance.png" alt="Overall Performance">
-        </figure>
-        <p class="has-text-centered">Figure 4: Overall Performance</p>
-      </div>
-    </div>
+    
   </div>
 </section>
 
