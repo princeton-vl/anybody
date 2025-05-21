@@ -106,18 +106,18 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
-                <!-- <a href="https://arxiv.org/pdf/2011.12948" -->
-                   <!-- class="external-link button is-normal is-rounded is-dark"> -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                  class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper (coming soon)</span>
                 </a>
-              </span>
+              </span> -->
               <span class="link-block">
-                <!-- <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
@@ -126,8 +126,8 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <!-- <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://github.com/meenalparakh/"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -146,136 +146,104 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/overview_video.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
+      <div style="border: 5px solid #003083; border-radius: 30px; padding: 10px; display: inline-block;">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/anybody.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+            <div style="text-align: center;">
+              <i>Any</i>Body is a benchmark to evaluate cross-embodiment generalization ability by focusing on two foundational tasks—reach and push. 
+              It enables testing generalization across three axes of morphological variations: (1) interpolation, 
+              which evaluates performance within a robot category sharing the same link structure; (2) extrapolation, 
+              which tests performance on robots with different link structures; and (3) composition, which assesses 
+              performance on combinations of link structures.
+            </div>
+        </p>
+      </div>
+      <!-- <h2 class="subtitle has-text-centered">
         <span class="dnerf">Benchmark Overview</span>
-      </h2>
+      </h2> -->
     </div>
   </div>
 </section>
 
-<!-- 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-vcentered">
+      <!-- Video Section -->
+      <div class="column is-half">
+        <div style="border: 5px solid #003083; border-radius: 30px; padding: 10px;">
+          <video id="half-split-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/baseline_setup.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-    </div>
-  </div>
-</section> -->
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+      <!-- Text Section -->
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="title">Morphology-aware Baselines</h3>
           <p>
-            Generalizing control policies to novel embodiments remains a fundamental challenge in enabling scalable 
-            and transferable learning in robotics. 
-            While prior works have explored this in locomotion, a systematic study in the context of manipulation tasks 
-            remains limited, partly due to the lack of standardized benchmarks. 
-            In this paper, we introduce a benchmark for learning cross-embodiment manipulation, 
-            focusing on two foundational tasks—reach and push—across a diverse range of morphologies. 
-            The benchmark is designed to test generalization along three axes: 
-            interpolation (testing performance within a robot category that shares the same link structure), 
-            extrapolation (testing on a robot with a different link structure), and composition (testing on combinations of link structures). 
-            On the benchmark, we evaluate the ability of different RL policies to learn from multiple morphologies and 
-            to generalize to novel ones. Our study aims to answer whether morphology-aware training can 
-            outperform single-embodiment baselines, whether zero-shot generalization to unseen morphologies is feasible, 
-            and how consistently these patterns hold across different generalization regimes. 
-            The results highlight the current limitations of multi-embodiment learning and provide insights into how 
-            architectural and training design choices influence policy generalization. 
-            <!-- AnyBody is a benchmark for learning cross-embodiment manipulation, 
-            focusing on two foundational tasks—reach and push—across a diverse range of morphologies. 
-            It is designed to test generalization along three axes: 
-            (a) interpolation (testing performance within a robot category that shares the same link structure),  
-            (b) composition (testing on combinations of link structures), and 
-            (c) extrapolation (testing on a robot with a different link structure). -->
+            With <i>Any</i>Body, we evaluate morphology-aware RL agents, that learn from environments interactions of 
+            train morphologies, and are tested for their ability to generalize to unseen morphologies.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Image. -->
-
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-      <img src="./static/images/int_comp.png"
-         alt="The three axes of generalization studied in AnyBody."
-         class="image"
-         style="display: block; margin: 0 auto; max-width: 60%; height: auto;"/>
-      </div>
-    </div> -->
-
-    <!-- Paper video.
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    / Paper video.
-  </div> -->
+  </div>
 </section>
 
+<section class="section" id="ExperimentalResults">
+  <div class="container is-max-desktop">
+    <h3 class="title has-text-centered">Experimental Results</h3>
+    <div class="columns is-vcentered">
+      <div class="column is-4">
+        <h3>Can ME training outperform the SE baseline on train morphs?</h3>
+      </div>
+      <div class="column is-9"></div>
+        <figure class="image is-16by9">
+          <img src="./static/images/mt_results.png" alt="Multi-task Scores">
+        </figure>
+        <p class="has-text-centered">Figure 1: Multi-task scores for different benchmark tasks.</p>
+      </div>
+    </div>
+    <div class="columns is-vcentered">
+      <div class="column is-3">
+        <h4>How well does the model extrapolate to different link structures?</h4>
+      </div>
+      <div class="column is-9">
+        <figure class="image is-16by9">
+          <img src="./static/images/extrapolation_results.png" alt="Extrapolation Results">
+        </figure>
+        <p class="has-text-centered">Figure 2: Extrapolation Results</p>
+      </div>
+    </div>
+    <div class="columns is-vcentered">
+      <div class="column is-3"></div>
+        <h4>How does the model perform on combinations of link structures?</h4>
+      </div>
+      <div class="column is-9">
+        <figure class="image is-16by9">
+          <img src="./static/images/composition_results.png" alt="Composition Results">
+        </figure>
+        <p class="has-text-centered">Figure 3: Composition Results</p>
+      </div>
+    </div>
+    <div class="columns is-vcentered">
+      <div class="column is-3">
+        <h4>What is the overall performance across all tasks?</h4>
+      </div>
+      <div class="column is-9">
+        <figure class="image is-16by9">
+          <img src="./static/images/overall_performance.png" alt="Overall Performance">
+        </figure>
+        <p class="has-text-centered">Figure 4: Overall Performance</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -296,7 +264,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            <p style="text-align: center;">Website template taken from <a href="https://nerfies.github.io/">Nerfies</a>.</p>
+            <p style="text-align: center;">Website template based on <a href="https://nerfies.github.io/">Nerfies</a>.</p>
           </p>
         </div>
       </div>
