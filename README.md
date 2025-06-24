@@ -1,3 +1,2 @@
 # Anybody 
-[site in progress
-](https://princeton-vl.github.io/anybody)
+[site](https://princeton-vl.github.io/anybody)
